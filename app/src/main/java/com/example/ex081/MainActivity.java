@@ -8,10 +8,18 @@ import android.renderscript.Sampler;
 import android.view.View;
 import android.widget.EditText;
 
+
+/**
+ * @author Liad Peretz
+ * @version 1.0
+ * @since 10/11/20
+ * Short description- MainActivity use for absorption of the series type, the first number in the series and the difference or multiplier of the series.
+ */
 public class MainActivity extends AppCompatActivity {
+
     boolean type= false;
-    EditText first,nextEd;
-    String str1,str2;
+    EditText first, nextEd;
+    String str1, str2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +30,14 @@ public class MainActivity extends AppCompatActivity {
         nextEd = (EditText) findViewById(R.id.nextEd);
     }
 
+
+    /**
+     * Change
+     * Short description- use for changing the series type.
+     * <p>
+     *     View view
+     * @param view the view
+     */
     public void change(View view) {
         if (type)
             type= false;
@@ -29,6 +45,14 @@ public class MainActivity extends AppCompatActivity {
             type= true;
     }
 
+
+    /**
+     * Next activity.
+     * Short description- use for moving to TheSeries Activity.
+     * <p>
+     *     View view
+     * @param view the view
+     */
     public void nextActivity(View view) {
         str1 = first.getText().toString();
         str2 = nextEd.getText().toString();
@@ -50,4 +74,5 @@ public class MainActivity extends AppCompatActivity {
             startActivity(check);
         }
     }
+
 }

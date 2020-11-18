@@ -17,8 +17,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="10"
-        android:textOff="invoice series"
-        android:textOn="engineering series"
+        android:textOff="arithmetic series"
+        android:textOn="geometric series"
         android:onClick="change"/>
 
     <EditText
